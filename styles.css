@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100%;
+	background-image: url("links/image/wallpaper.jpg");
+	overflow-y: hidden;
+}
+
+.wrapper {
+    width: auto;
+    height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	
+}
+
+.box {
+    width: 100px;
+	padding-left: 10px;
+    padding-top: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+}
+.box a {
+	width: 100px;
+    height: 120px;
+    clear: left;	
+	margin-bottom: 30px;
+}
+.box p {
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 0px 1px 2px #000000;
+    font-size: 11pt;
+}
+.box img {
+	margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+.toolbar {
+    width: 100%;
+    height: 50px;
+    background-color: darkslategrey;
+    position: fixed;
+    bottom: 0;
+    overflow-y: hidden;
+    padding-left: 5px;
+	z-index:2 ;
+}
+
+#profile img {
+  border-radius: 50%;
+	margin-bottom: 15px;
+  
+}
+#profile {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+    text-align: center;
+	
+}
+#profile form #password {
+    height: 40px;
+    width: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 20px;
+	opacity: 0.8;
+	background-color: rgba(255,255,255,0.5);
+}
+#loginwrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#profile h2  {
+    color: #FFFFFF;
+}
+#profile button  {
+    height: 40px;
+    width: 80px;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: crimson;
+    color: #FFFFFF;	
+}
+#profile button:hover {
+    border: medium solid #FF0004;
+}
+
+.menu  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 120px;
+  bottom: 70px;
+  left: 20px;
+  background-color: rgba(30,30,30,0.90);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.menu a {
+  margin-top: 33px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: rgba(201,21,24,1.00);
+}
+
+
+.menu .closebtn {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0px;
+    right: 25px;
+    font-size: 80px;
+    text-align: center;
+    border-radius: 50%;
+}
+.openbtn {
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: darkslategrey;
+  color: white;
+  border: none;
+}
+.openbtn:hover {
+  background-color:rgba(255,255,255,0.2);
+}
+
+#start a img {
+	position:relative;
+	float: left;
+	border-radius: 50%;
+	margin-top: -57px;
+    margin-left: 35px;
+	margin-right: 20px;
+    border: thick solid rgba(255,255,255,1.00);
+}
+#timer{
+    float: right;
+	margin-right: 20px;
+	margin-top: 15px; 
+    height: 50px;
+    width: 50px;
+    display: inline;
+    z-index: 1;
+    color: rgba(255,255,255,1.00);	
+}
+.toolbar a  {
+    padding-top: 10px;
+    padding-left: 18px;
+    position: fixed;
+    background-color: rgba(255,255,255,0.1);
+    width: 50px;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+	border-bottom-color: rgba(255,255,255,1.00);
+}
+
+.toolbar a:hover  {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.toolbar a img {
+	margin-top: 0;
+	height: 30px;
+	width: 30px;
+}
+
+.search{
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 10%;
+	padding-bottom: 20px;
+    height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 1px 10px 20px rgba(0,0,0,0.5);
+    border: medium solid rgba(210,210,210,1.00);
+	overflow-y: hidden;
+}
+.text{
+	height:70%;
+	padding: 50px;
+	border: none;
+	overflow-y:scroll;
+	box-shadow: none;
+}
+.topbar{
+	height: 100px;
+	padding-left: 0px;
+	background-color: rgba(210,210,210,1.00);
+}
+
+.tab{
+    padding-top: 10px;
+    padding-left: 25px;
+    background-color: rgba(240,240,240,1.00);
+    width: 150px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-color: rgba(0,0,0,1.00);
+    font-size: 12px;
+}
+
+#sbar {
+    height: 40px;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid rgba(187,187,187,1.00);
+    border-radius: 30px;
+    opacity: 0.8;
+    margin: auto;
+    display: block;
+}
+
+.logo img {
+  margin: auto;
+  display: block;
+}
+.logo {
+	padding-top: 100px;
+}
+.tab #web-add  {
+	font-size: 20;
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
